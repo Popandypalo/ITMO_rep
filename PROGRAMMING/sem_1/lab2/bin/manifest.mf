@@ -1,0 +1,2 @@
+Main-Class: src.Main
+Class-Path: lib/Pokemon.jar
