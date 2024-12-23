@@ -6,6 +6,7 @@ import main.java.domain.entity.drink.Drink;
 import main.java.domain.entity.kiosk.Kiosk;
 import main.java.domain.entity.kiosk.KioskButton;
 import main.java.domain.entity.kiosk.KioskShelf;
+import main.java.domain.strategy.ActionStrategy;
 import main.java.domain.util.Logger;
 
 public class Human implements Character {
@@ -13,6 +14,7 @@ public class Human implements Character {
     private String name;
     private boolean thirsty;
     private boolean hot;
+    private ActionStrategy<Human> currentStrategy;
 
     public Human(String name, boolean thirsty, boolean hot) {
         this.name = name;
@@ -30,9 +32,18 @@ public class Human implements Character {
         Logger.log(Logger.LogType.ACTIVITY, name + " смотрит на: " + observation);
     }
 
+    public void setStrategy(ActionStrategy<Human> strategy) {
+        this.currentStrategy = strategy;
+    }
+
+    public ActionStrategy<Human> getStrategy(){
+        return currentStrategy;
+    }
     @Override
     public void performAction() {
-        Logger.log(Logger.LogType.ACTIVITY, name + " выполняет активность.");
+        if (currentStrategy != null) {
+            currentStrategy.execute(this);
+        }
     }
 
     @Override
@@ -99,8 +110,7 @@ public class Human implements Character {
             Logger.log(Logger.LogType.INTERACTION, name + " не хочет пить.");
         }
     }
-
-
+    
     public void complainAboutHeat() {
         if (hot) {
             speak("мне жарко!");

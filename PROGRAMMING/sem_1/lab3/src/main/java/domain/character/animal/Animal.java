@@ -2,14 +2,17 @@ package main.java.domain.character.animal;
 
 import main.java.domain.character.Character;
 import main.java.domain.entity.Entity;
+import main.java.domain.strategy.ActionStrategy;
 import main.java.domain.util.Logger;
 
 public abstract class Animal implements Character {
 
     private String name;
+    private ActionStrategy<Animal> currentStrategy;
 
-    public Animal(String name) {
+    public Animal(String name, ActionStrategy<Animal> strategy) {
         this.name = name;
+        this.currentStrategy = strategy;
     }
 
     @Override
@@ -22,9 +25,19 @@ public abstract class Animal implements Character {
         Logger.log(Logger.LogType.ACTIVITY, name + " смотрит на: " + observation);
     }
 
+    public void setStrategy(ActionStrategy<Animal> strategy) {
+        this.currentStrategy = strategy;
+    }
+
+    public ActionStrategy<Animal> getStrategy(){
+        return currentStrategy;
+    }
+
     @Override
     public void performAction() {
-        Logger.log(Logger.LogType.ACTIVITY, name + " выполняет действие.");
+        if (currentStrategy != null) {
+            currentStrategy.execute(this);
+        }
     }
 
     @Override
@@ -53,6 +66,6 @@ public abstract class Animal implements Character {
     }
 
     public abstract void sleep(); 
-    
+
     public abstract void rest();
 }

@@ -51,8 +51,18 @@ public class Kiosk implements Entity {
     }
 
     private void openFaucet(String shelfName, Drink drink) {
-        // Логируем открытие краника
         Logger.log(Logger.LogType.ACTIVITY, "Открытие краника для напитка: " + drink.getName() + " с полки " + shelfName);
+    }
+
+    public Drink getAvailableDrink(String drinkName) {
+        for (KioskShelf shelf : shelves) {
+            for (Drink drink : shelf.getDrinks()) {
+                if (drink.getName().equalsIgnoreCase(drinkName)) {
+                    return drink;
+                }
+            }
+        }
+        return null;
     }
 
     @Override

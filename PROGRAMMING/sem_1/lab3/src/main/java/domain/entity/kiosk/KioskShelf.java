@@ -40,7 +40,9 @@ public class KioskShelf {
     public String getName() {
         return name;
     }
-
+    public List<Drink> getDrinks() {
+        return drinks;
+    }
     @Override
     public String toString() {
         return name + " содержит напитки: " + drinks;
