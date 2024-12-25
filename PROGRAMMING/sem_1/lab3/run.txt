@@ -1,0 +1,1 @@
+java -cp "jar/lab3.jar;lib/gson-2.10.1.jar" main.java.application.Main
