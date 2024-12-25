@@ -1,6 +1,8 @@
 package main.java.domain.character;
 
-public interface Character {
+import main.java.domain.interface_.VisibleEntity;
+
+public interface Character extends VisibleEntity {
     void speak(String words);
 
     void observe(String observation);
@@ -13,3 +15,4 @@ public interface Character {
 
     void setName(String name);
 }
+

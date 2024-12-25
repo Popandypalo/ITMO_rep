@@ -34,7 +34,6 @@ public class Kiosk implements Entity {
     public void serveDrink(String shelfName, Drink drink) {
         KioskShelf shelf = findShelfByName(shelfName);
         if (shelf != null && shelf.hasDrink(drink)) {
-            // Открытие краника
             openFaucet(shelfName, drink);
             Logger.log(Logger.LogType.ACTIVITY, name + " выдает: " + drink.getName() + " с полки " + shelfName);
             shelf.removeDrink(drink);

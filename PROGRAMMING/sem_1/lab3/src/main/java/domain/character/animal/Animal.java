@@ -8,11 +8,13 @@ import main.java.domain.util.Logger;
 public abstract class Animal implements Character {
 
     private String name;
+    private boolean visible;
     private ActionStrategy<Animal> currentStrategy;
 
     public Animal(String name, ActionStrategy<Animal> strategy) {
         this.name = name;
         this.currentStrategy = strategy;
+        this.visible = true;
     }
 
     @Override
@@ -22,7 +24,18 @@ public abstract class Animal implements Character {
 
     @Override
     public void observe(String observation) {
-        Logger.log(Logger.LogType.ACTIVITY, name + " смотрит на: " + observation);
+        String visibility = isVisible() ? "видно" : "не видно";
+        Logger.log(Logger.LogType.ACTIVITY, name + " смотрит на: " + observation + ". Это " + visibility);
+    }
+
+    @Override
+    public void setVisible(boolean visible) {
+        this.visible = visible;
+    }
+
+    @Override
+    public boolean isVisible() {
+        return visible;
     }
 
     public void setStrategy(ActionStrategy<Animal> strategy) {

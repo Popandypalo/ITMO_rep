@@ -47,7 +47,8 @@ public class SceneObjectBuilder {
     }
     
     public static Human buildHuman(String name, boolean thirsty, boolean hot, ActionStrategy<Human> strategy) {
-        Human human = new HumanFactory().createHuman(name, thirsty, hot);
+        int money = (int) ((Math.random() * (150 - 50)) + 50);
+        Human human = new HumanFactory().createHuman(name, thirsty, hot, money);
 
         human.setStrategy(strategy);
 

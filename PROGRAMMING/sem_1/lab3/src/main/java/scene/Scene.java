@@ -36,9 +36,12 @@ public class Scene {
             } else {
                 Logger.log(Logger.LogType.ERROR, "У " + animal.getName() + " нет стратегии для выполнения действия.");
             }
+            human.speak("как круто!");
         }
 
+        
         for (Entity kiosk : zoo.getKiosks()) {
+            human.observe(kiosk.getDescription());
             human.approach(kiosk);
 
             human.complainAboutHeat();
