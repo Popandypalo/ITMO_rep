@@ -20,7 +20,7 @@ void runAdditionalTask2() {
 }
 
 int main() {
-    vector<string> tasksList = {"MainTaskAndAdditionalTask3", "AdditionalTask1", "AdditionalTask2"};
+    vector<string> tasksList = {"main_task_and_dop_3", "dop_1", "dop_2"};
     
     for (const string& taskName : tasksList) {
         cout << taskName << ": ";
@@ -38,7 +38,7 @@ int main() {
         auto end = high_resolution_clock::now();
         auto duration = duration_cast<microseconds>(end - start);
         
-        cout << duration.count() / 1000.0 << " ms" << endl;  // Convert to milliseconds and print
+        cout << duration.count() / 1000.0 << " ms" << endl;
     }
 
     return 0;
