@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "C:/Program Files (x86)/Microsoft Visual Studio/2019/BuildTools"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"utility": "cpp",
+			"stack": "cpp"
+		}
+	}
+}
