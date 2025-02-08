@@ -1,0 +1,148 @@
+<?xml version='1.0'?>
+<!DOCTYPE wml PUBLIC '-//WAPFORUM//DTD WML 1.1//EN' 'http://www.wapforum.org/DTD/wml_1.1.xml'>
+<wml>
+    <card id="timetable">
+        <card id="Monday">
+            <card id="lesson1">
+                <card id="building">
+                    <p>Кронверкский пр., д.49, лит.А</p>
+                </card>
+                <card id="format">
+                    <p>Очно - дистанционный</p>
+                </card>
+                <card id="room">
+                    <p>2117</p>
+                </card>
+                <card id="subject">
+                    <p>Программирование (Лаб)</p>
+                </card>
+                <card id="teacher">
+                    <p>Наумова Надежда Александровна</p>
+                </card>
+                <card id="time">
+                    <p>8:20 - 9:50</p>
+                </card>
+                <card id="weeks">
+                    <p>3, 5, 7, 9, 11, 13, 15, 17</p>
+                </card>
+            </card>
+            <card id="lesson2">
+                <card id="building">
+                    <p>Кронверкский пр., д.49, лит.А</p>
+                </card>
+                <card id="format">
+                    <p>Очно - дистанционный</p>
+                </card>
+                <card id="room">
+                    <p>2117</p>
+                </card>
+                <card id="subject">
+                    <p>Программирование (Лаб)</p>
+                </card>
+                <card id="teacher">
+                    <p>Наумова Надежда Александровна</p>
+                </card>
+                <card id="time">
+                    <p>10:00 - 11:30</p>
+                </card>
+                <card id="weeks">
+                    <p>3, 5, 7, 9, 11, 13, 15, 17</p>
+                </card>
+            </card>
+            <card id="lesson3">
+                <card id="building">
+                    <p>Кронверкский пр., д.49, лит.А</p>
+                </card>
+                <card id="format">
+                    <p>Очно - дистанционный</p>
+                </card>
+                <card id="room">
+                    <p>2403</p>
+                </card>
+                <card id="subject">
+                    <p>Основы дискретной математики (базовый уровень) (Лек)</p>
+                </card>
+                <card id="teacher">
+                    <p>Поляков Владимир Иванович</p>
+                </card>
+                <card id="time">
+                    <p>11:40 - 13:10</p>
+                </card>
+                <card id="weeks">
+                    <p>2, 3, 4, 5, 6, 7, 8, 9, 11, 12, 13, 14, 15, 16, 17, 18</p>
+                </card>
+            </card>
+            <card id="lesson4">
+                <card id="building">
+                    <p>Кронверкский пр., д.49, лит.А</p>
+                </card>
+                <card id="format">
+                    <p>Очно - дистанционный</p>
+                </card>
+                <card id="room">
+                    <p>2403</p>
+                </card>
+                <card id="subject">
+                    <p>Основы дискретной математики (базовый уровень) (Прак)</p>
+                </card>
+                <card id="teacher">
+                    <p>Поляков Владимир Иванович</p>
+                </card>
+                <card id="time">
+                    <p>13:30 - 15:00</p>
+                </card>
+                <card id="weeks">
+                    <p>2, 3, 4, 5, 6, 7, 8, 9, 11, 12, 13, 14, 15, 16, 17, 18</p>
+                </card>
+            </card>
+        </card>
+        <card id="Thursday">
+            <card id="lesson1">
+                <card id="building">
+                    <p>Кронверкский пр., д.49, лит.А</p>
+                </card>
+                <card id="format">
+                    <p>Очно - дистанционный</p>
+                </card>
+                <card id="room">
+                    <p>1229</p>
+                </card>
+                <card id="subject">
+                    <p>Россия в истории современных международных отношений (Лек)</p>
+                </card>
+                <card id="teacher">
+                    <p>Богомазов Николай Иванович</p>
+                </card>
+                <card id="time">
+                    <p>13:30 - 15:00</p>
+                </card>
+                <card id="weeks">
+                    <p>1, 3, 5, 7, 9, 11, 13, 15</p>
+                </card>
+            </card>
+            <card id="lesson2">
+                <card id="building">
+                    <p>Кронверкский пр., д.49, лит.А</p>
+                </card>
+                <card id="format">
+                    <p>Очно - дистанционный</p>
+                </card>
+                <card id="room">
+                    <p>2201</p>
+                </card>
+                <card id="subject">
+                    <p>Россия в истории современных международных отношений (Прак)</p>
+                </card>
+                <card id="teacher">
+                    <p>Павловский Алексей Федорович</p>
+                </card>
+                <card id="time">
+                    <p>17:00 - 18:30</p>
+                </card>
+                <card id="weeks">
+                    <p>1, 3, 5, 7, 9, 11, 13, 15</p>
+                </card>
+            </card>
+        </card>
+    </card>
+</wml>
