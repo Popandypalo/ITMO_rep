@@ -1,0 +1,19 @@
+[
+    {
+      "id": -5,                          
+      "name": "",                        
+      "coordinates": { "x": null, "y": 20 },
+      "creationDate": "INVALID_DATE",    
+      "price": -100,                     
+      "partNumber": null,                
+      "unitOfMeasure": "INVALID_ENUM",   
+      "manufacturer": {
+        "id": 0,                         
+        "name": null,                    
+        "employeesCount": -1,           
+        "type": "WRONG_TYPE",            
+        "postalAddress": { "street": null }
+      }
+    }
+  ]
+  

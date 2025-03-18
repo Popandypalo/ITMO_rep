@@ -1,0 +1,66 @@
+[
+    {
+      "id": 1,
+      "name": "Laptop",
+      "coordinates": {
+        "x": 10,
+        "y": 20
+      },
+      "creationDate": "2024-12-01T10:15:30Z",
+      "price": 1500,
+      "partNumber": "LP-12345",
+      "unitOfMeasure": "KILOGRAMS",
+      "manufacturer": {
+        "id": 1,
+        "name": "TechCorp",
+        "employeesCount": 500,
+        "type": "COMMERCIAL",
+        "postalAddress": {
+          "street": "Tech Street 1"
+        }
+      }
+    },
+    {
+      "id": 2,
+      "name": "Smartphone",
+      "coordinates": {
+        "x": 50,
+        "y": 60
+      },
+      "creationDate": "2025-01-15T09:45:00Z",
+      "price": 800,
+      "partNumber": "SP-98765",
+      "unitOfMeasure": "GRAMS",
+      "manufacturer": {
+        "id": 2,
+        "name": "MobileInc",
+        "employeesCount": 300,
+        "type": "PRIVATE_LIMITED_COMPANY",
+        "postalAddress": {
+          "street": "Mobile Avenue"
+        }
+      }
+    },
+    {
+      "id": 3,
+      "name": "Tablet",
+      "coordinates": {
+        "x": 30,
+        "y": 40
+      },
+      "creationDate": "2024-11-20T14:00:00Z",
+      "price": null,
+      "partNumber": "TB-55555",
+      "unitOfMeasure": null,
+      "manufacturer": {
+        "id": 3,
+        "name": "TabWorld",
+        "employeesCount": 150,
+        "type": "OPEN_JOINT_STOCK_COMPANY",
+        "postalAddress": {
+          "street": "Tab Street"
+        }
+      }
+    }
+  ]
+  

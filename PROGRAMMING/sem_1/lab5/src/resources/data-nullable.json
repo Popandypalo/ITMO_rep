@@ -1,0 +1,19 @@
+[
+    {
+      "id": 3,
+      "name": "Tablet",
+      "coordinates": { "x": 5, "y": 10 },
+      "creationDate": "2024-11-20T14:00:00Z",
+      "price": null,
+      "partNumber": "TB-55555",
+      "unitOfMeasure": null,
+      "manufacturer": {
+        "id": 3,
+        "name": "TabWorld",
+        "employeesCount": 100,
+        "type": null,
+        "postalAddress": { "street": null }
+      }
+    }
+  ]
+  

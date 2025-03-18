@@ -1,0 +1,35 @@
+[
+    {
+      "id": 1,
+      "name": "ProductOne",
+      "coordinates": { "x": 1, "y": 2 },
+      "creationDate": "2025-03-01T12:00:00Z",
+      "price": 500,
+      "partNumber": "P-0001",
+      "unitOfMeasure": "MILLIGRAMS",
+      "manufacturer": {
+        "id": 1,
+        "name": "OrgOne",
+        "employeesCount": 50,
+        "type": "COMMERCIAL",
+        "postalAddress": { "street": "Street 1" }
+      }
+    },
+    {
+      "id": 1,
+      "name": "ProductTwo",
+      "coordinates": { "x": 3, "y": 4 },
+      "creationDate": "2025-03-02T13:00:00Z",
+      "price": 600,
+      "partNumber": "P-0002",
+      "unitOfMeasure": "GRAMS",
+      "manufacturer": {
+        "id": 2,
+        "name": "OrgTwo",
+        "employeesCount": 60,
+        "type": "PRIVATE_LIMITED_COMPANY",
+        "postalAddress": { "street": "Street 2" }
+      }
+    }
+  ]
+  
